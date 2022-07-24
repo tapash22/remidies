@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 .productdetail {
-  margin-top: 120px;
+  margin-top: 190px;
   width: 100%;
   padding: 0;
 }
