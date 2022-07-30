@@ -6,7 +6,7 @@
         <div class="col-md-4" v-for="product in products" :key="product.id">
           <div class="card">
             <div class="card-body">
-              <img :src="product.pimage" />
+              <img :src="'../storage/app/'+product.pimage" />
               <p>{{ product.pname }}</p>
               <router-link
                 :to="{ name: 'ProductDetail', params: { id: product.id } }"

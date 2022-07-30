@@ -5,8 +5,8 @@
         <div class="col-md-12">
           <div class="box">
             <div class="image">
-              <img :src="'/sub/storage/app/' + products.pimage" />
-              <h3>{{ products.pdname }}</h3>
+              <img :src="'../storage/app/' + products.pimage" />
+              <h3>{{ products.pname }}</h3>
             </div>
             <div class="image1">
               <div class="info">
@@ -17,23 +17,23 @@
                       aria-hidden="true"
                     ></i
                   ></strong>
-                  {{ products.pcname }}<br />
+                  {{ products.pcategory }}<br />
                   <strong
                     ><i
                       class="fa fa-arrow-circle-o-right"
                       aria-hidden="true"
                     ></i></strong
-                  >{{ products.pscname }}
+                  >{{ products.pscategory }}
                 </h4>
               </div>
               <div class="des">
                 <h3>Introduction</h3>
-                <p>{{ products.pintro }}</p>
+                <p>{{ products.pdescription }}</p>
               </div>
 
-              <div class="des">
-                <h3>DOSAGE</h3>
-                <p>{{ products.pdescription }}</p>
+              <div class="dess">
+                <h3>Composition</h3>
+                <img :src="'../storage/app/'+products.pcomposition"/>
               </div>
             </div>
           </div>
@@ -49,13 +49,13 @@ import Product from "../../apis/Product";
 export default {
   data() {
     return {
-      pdname: "",
-      pcname: "",
-      pscname: "",
-      pintro: "",
-      pdescription: "",
-      pcomimage: "",
-      pimage: "",
+      // pdname: "",
+      // pcname: "",
+      // pscname: "",
+      // pintro: "",
+      // pdescription: "",
+      // pcomimage: "",
+      // pimage: "",
       id: this.$route.params.id,
       products: [],
     };
@@ -114,6 +114,7 @@ export default {
 .image h3 {
   font-size: 1.4rem;
   font-weight: 900;
+  text-align: center;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
@@ -144,7 +145,7 @@ export default {
   padding: 5px;
   margin: 5px;
 }
-.image1 .des h3 {
+.image1 .des h3, .image1 .dess h3 {
   font-size: 1.4rem;
   font-weight: 900;
   font-family: "Oswald", sans-serif;
@@ -156,7 +157,21 @@ export default {
   padding: 5px;
   margin: 5px;
 }
-
+.image1 .dess{
+  width: 100%;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
+.image1 .dess img{
+  width: 70%;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+  background-position: center;
+}
+/* 
 .image1 .des1 {
   width: 100%;
   padding: 5px;
@@ -178,7 +193,7 @@ export default {
 .image1 .des1 .image img {
   width: 100%;
   height: 100%;
-}
+} */
 
 @media only screen and (max-width: 436px) {
   .productdetail {

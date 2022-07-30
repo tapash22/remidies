@@ -17,25 +17,25 @@
       </div>
       <nav>
         <ul class="sticky">
-          <li><router-link to="home">Home</router-link></li>
-          <li><router-link to="notice">Notice Board</router-link></li>
-          <li><router-link to="gallery">Gallery</router-link></li>
+          <li><router-link to="/home">Home</router-link></li>
+          <li><router-link to="/notice">Notice Board</router-link></li>
+          <li><router-link to="/gallery">Gallery</router-link></li>
           <li>
-            <router-link to="products">Products</router-link>
+            <router-link to="/products">Products</router-link>
             <ul class="ul">
               <li>
                 <router-link to="#">Poultry</router-link>
                 <ul class="two">
                   <li>
-                    <router-link to="antibiotic">Antibiotics</router-link>
+                    <router-link to="/antibiotic">Antibiotics</router-link>
                   </li>
                   <li>
-                    <router-link to="nutrition">
+                    <router-link to="/nutrition">
                       Nutrition & Probiotics</router-link
                     >
                   </li>
                   <li>
-                    <router-link to="essentialoil"
+                    <router-link to="/essentialoil"
                       >Essential oils & Herbs</router-link
                     >
                   </li>
@@ -43,12 +43,12 @@
               </li>
 
               <li>
-                <router-link to="cattle">Cattle</router-link>
+                <router-link to="/cattle">Cattle</router-link>
               </li>
             </ul>
           </li>
-          <li><router-link to="partners">Partners</router-link></li>
-          <li><router-link to="contactus">Contact Us</router-link></li>
+          <li><router-link to="/partners">Partners</router-link></li>
+          <li><router-link to="/contactus">Contact Us</router-link></li>
         </ul>
       </nav>
     </div>

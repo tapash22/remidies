@@ -144,10 +144,10 @@ export default {
   font-family: "Playfair Display", serif;
 }
 .row .sliders {
-  padding: 0;
-  margin: 0;
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
   display: block;
 }
 .row .col-md-6 {
@@ -195,14 +195,14 @@ export default {
   width: 100%;
   height: 100%;
   margin: 0;
-   padding:10px;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
 .col-md-12 .info .image {
   width: 20%;
   height: 280px;
-  padding:0;
+  padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -285,9 +285,9 @@ export default {
   padding: 5px;
   margin: 0;
 }
-.row .introduce .col-md-3 .box  img{
+.row .introduce .col-md-3 .box img {
   width: 100%;
-  height:100%;
+  height: 100%;
   padding: 0;
   margin: 0;
 }

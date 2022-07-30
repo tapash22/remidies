@@ -5,7 +5,7 @@
       <div class="box">
         <div class="col-md-4" v-for="gallery in gallerys" :key="gallery.id">
           <div class="card">
-            <img :src="gallery.gimage" />
+            <img :src="'../storage/app/'+gallery.gimage" />
           </div>
         </div>
       </div>

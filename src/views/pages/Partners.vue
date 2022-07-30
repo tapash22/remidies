@@ -5,7 +5,7 @@
       <div class="col-md-4" v-for="partner in partners" :key="partner.id">
         <div class="card">
           <div class="card-body">
-            <img :src="partner.ptimage" />
+            <img :src="'../storage/app/'+partner.ptimage" />
           </div>
           <div class="card-footer">
             <p>{{ partner.ptname }} <br />{{ partner.pcertificate }}</p>

@@ -32,7 +32,8 @@
           </div>
         </form>
       </div>
-      <div class="col-md-12">
+
+      <!-- <div class="col-md-12"> -->
         <!-- <table class="table table-striped">
           <thead>
             <tr>
@@ -59,7 +60,7 @@
             </tr>
           </tbody>
         </table> -->
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </template>
